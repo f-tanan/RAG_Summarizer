@@ -12,9 +12,9 @@ class Config:
     WATSONX_URL = os.getenv("WATSONX_URL")
 
     # Model IDs
-    model_id = 'ibm/granite-3-8b-instruct'
+    MODEL_ID = 'ibm/granite-3-8b-instruct'
 
-    parameters = {
+    PARAMETERS = {
     GenParams.DECODING_METHOD: DecodingMethods.GREEDY,  
     GenParams.MIN_NEW_TOKENS: 130, # this controls the minimum number of tokens in the generated output
     GenParams.MAX_NEW_TOKENS: 256,  # this controls the maximum number of tokens in the generated output
@@ -22,4 +22,4 @@ class Config:
     }
 
     #Corpus URL for the text data
-    corpus_url = 'https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/6JDbUb_L3egv_eOkouY71A.txt'
+    CORPUS_URL = 'https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/6JDbUb_L3egv_eOkouY71A.txt'
